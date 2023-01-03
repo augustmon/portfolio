@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkillList.css";
 
-export default function (props) {
+export default function SkillList(props) {
   const skillsToDisplay = props.skills.map((skill) => (
     <li key={skill} className="bullet-main">
       {skill}

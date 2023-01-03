@@ -1,6 +1,9 @@
 body {
-  background: var(--light);
+  /* background: var(--light); */
   font-family: "Inter";
+  background-color: var(--light);
+  /* background-color: var(--dark-100); */
+  /* background-color: var(--dark-80); */
 }
 
 p {
@@ -17,6 +20,10 @@ a {
   /* or 26px */
   letter-spacing: -0.02em;
   color: #95b1d4;
+}
+
+ul {
+  margin: 0;
 }
 
 :root {
@@ -49,17 +56,30 @@ h2 {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 3em;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
+  margin-top: 2px;
 }
 
 h3 {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2em;
   letter-spacing: -0.02em;
+  margin-bottom: 2px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 1100px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 .eyebrow {
@@ -79,14 +99,14 @@ h3 {
 .bold-main {
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1em;
   /* line-height: 15px; */
 }
 
 .cursive-main {
   font-style: italic;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1em;
   /* line-height: 15px; */
   padding: 0 8px;
 }
@@ -94,6 +114,6 @@ h3 {
 .bullet-main {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 150%;
 }

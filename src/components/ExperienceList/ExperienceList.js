@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../App.css";
+import "./ExperienceList.css";
 
 // COMPONENTS
 import ExperienceItem from "../ExperienceItem/ExperienceItem";
