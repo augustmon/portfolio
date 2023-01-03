@@ -1,0 +1,21 @@
+body {
+  margin: 10px;
+}
+
+.bold-main {
+  margin-top: 0px;
+}
+
+.cursive-main {
+  color: white;
+}
+
+/* .main-entry {
+  margin: 0px;
+} */
+
+.task-list {
+  padding-left: 16px;
+  color: var(--dark-100);
+  margin: 0px;
+}
