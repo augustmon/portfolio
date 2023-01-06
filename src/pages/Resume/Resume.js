@@ -5,7 +5,6 @@ import "./Resume.css";
 import ExperienceList from "../../components/ExperienceList/ExperienceList";
 import SkillList from "../../components/SkillList/SkillList";
 import Picture from "../../components/Picture/Picture";
-import PictureRound from "../../components/Picture/PictureRound";
 
 import workExperience from "./../../JSON/work-experience.json";
 import education from "./../../JSON/education.json";
