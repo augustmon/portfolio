@@ -5,6 +5,7 @@ import "./Resume.css";
 import ExperienceList from "../../components/ExperienceList/ExperienceList";
 import SkillList from "../../components/SkillList/SkillList";
 import Picture from "../../components/Picture/Picture";
+import PictureRound from "../../components/Picture/PictureRound";
 
 import workExperience from "./../../JSON/work-experience.json";
 import education from "./../../JSON/education.json";
@@ -15,7 +16,8 @@ import softSkills from "./../../JSON/soft-skills.json";
 export default function Resume() {
   return (
     <div className="Resume flex-container">
-      <div className="expereience-column">
+      <div className="left-column">
+        <Picture id="left" />
         <ExperienceList
           heading="Work Experience"
           headingColor="var(--sky-blue-80)"
@@ -31,8 +33,8 @@ export default function Resume() {
         />
       </div>
 
-      <div className="skill-column">
-        <Picture />
+      <div className="right-column">
+        <Picture id="right" />
 
         <SkillList
           text="'Soft' Skills"

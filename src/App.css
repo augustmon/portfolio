@@ -1,9 +1,14 @@
 body {
-  /* background: var(--light); */
   font-family: "Inter";
   background-color: var(--light);
-  /* background-color: var(--dark-100); */
+  background-color: var(--dark-80);
   /* background-color: var(--dark-80); */
+
+  display: flex;
+  justify-content: center;
+
+  /* width: 100%;
+  height: 100%; */
 }
 
 p {
@@ -57,9 +62,9 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 3em;
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-  margin-top: 2px;
+  /* letter-spacing: -0.02em; */
+  margin-bottom: 12px;
+  margin-top: 0;
 }
 
 h3 {

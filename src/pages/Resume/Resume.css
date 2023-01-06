@@ -1,33 +1,51 @@
 .Resume {
-  margin: 10vh 5vw;
+  margin: 2vh 10vw;
+  padding: 24px;
+  max-width: 1400px;
+  background-color: var(--light);
+  border-radius: 25px;
+  margin-top: 15vh;
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.right-column {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 @media (max-width: 1100px) {
   .Resume {
-    margin: 0 2vw;
+    margin: 24px 2vw;
   }
-}
-
-.skill-column {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 1100px) {
-  .skill-column {
+  .right-column {
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0 10vw;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 700px) {
-  /* .SkillList {
-    margin: 0;
-  } */
-
-  .skill-column {
+  .Resume {
+    margin: 6px;
+    /* margin-bottom: 12px; */
+    padding: 12px;
+  }
+  .right-column {
     flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
 }

@@ -1,7 +1,7 @@
 .Picture {
-  width: 200px;
-  margin: 1em 10vw;
-  border-radius: 25px;
+  width: 180px;
+  border-radius: 12px;
+  border-color: var(--dull-grey-80);
   border-style: dashed;
 }
 
@@ -12,8 +12,29 @@
   border-radius: inherit;
 }
 
+.left-column > .Picture {
+  border-radius: 50%;
+  width: 120px;
+  align-self: flex-end;
+  top: 76px;
+
+  visibility: hidden;
+  position: absolute;
+}
+
 @media (max-width: 1100px) {
-  .Picture {
+  .right-column > .Picture {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .left-column > .Picture {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 560px) {
+  .left-column > .Picture {
     visibility: hidden;
     position: absolute;
   }
