@@ -4,4 +4,11 @@
   padding: 12px;
   min-width: 320px;
   max-width: 500px;
+  margin-right: 24px;
+}
+
+@media (max-width: 1100px) {
+  .ExperienceList {
+    margin-right: 0;
+  }
 }

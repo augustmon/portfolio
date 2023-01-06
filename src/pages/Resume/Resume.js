@@ -36,7 +36,7 @@ export default function Resume() {
         <Picture id="right" />
 
         <SkillList
-          text="'Soft' Skills"
+          text='"Soft" Skills'
           skills={softSkills}
           color="var(--purple-100)"
         />

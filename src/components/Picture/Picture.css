@@ -1,6 +1,6 @@
 .Picture {
   width: 180px;
-  border-radius: 12px;
+  border-radius: 25px;
   border-color: var(--dull-grey-80);
   border-style: dashed;
 }
