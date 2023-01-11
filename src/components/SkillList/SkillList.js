@@ -11,7 +11,10 @@ export default function SkillList(props) {
   return (
     <div className="SkillList">
       <h3 style={{ color: props.color }}>{props.text}</h3>
-      <ul className="skill-bullets" style={{ backgroundColor: props.color }}>
+      <ul
+        className="skill-ul"
+        style={{ backgroundColor: props.color, columns: props.columns }}
+      >
         {skillsToDisplay}
       </ul>
     </div>

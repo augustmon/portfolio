@@ -3,12 +3,19 @@
   margin-top: 12px;
   padding: 12px;
   min-width: 320px;
-  max-width: 500px;
+  max-width: auto;
   margin-right: 24px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .ExperienceList {
     margin-right: 0;
+    /* padding: 12px 0; */
+  }
+}
+
+@media (max-width: 700px) {
+  .ExperienceList {
+    padding: 12px 0;
   }
 }

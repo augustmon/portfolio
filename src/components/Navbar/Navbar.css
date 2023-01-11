@@ -1,0 +1,22 @@
+.Navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--dark-100);
+  width: 100vw;
+  margin-top: 0;
+  height: 40px;
+  padding: 12px;
+}
+
+.Navbar > a {
+  font-size: 24px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* width: 100vw; */
+}
