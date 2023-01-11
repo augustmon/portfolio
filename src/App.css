@@ -8,15 +8,15 @@
 body {
   font-family: "Inter";
   background-color: var(--light);
-  background-color: var(--dark-80);
+  background-color: var(--dark-100);
 
-  width: 100vw;
-  height: 100%;
+  /* width: 100vw;
+  height: 100vh; */
   margin: 0;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 p {
@@ -56,6 +56,8 @@ ul {
   --purple-80: #c49ad2;
 
   --light: #f5f5f5;
+
+  /* --dusty-blue: ; */
 }
 
 h1 {

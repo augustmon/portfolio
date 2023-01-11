@@ -1,0 +1,30 @@
+.LargeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  background-color: var(--light);
+  padding: 48px;
+  box-shadow: 5px 4px 0px var(--sky-blue-100);
+  color: var(--dark-80);
+}
+
+.LargeLink:hover {
+  color: var(--light);
+  background-color: var(--baby-blue-80);
+  box-shadow: 5px 4px 0px var(--baby-blue-100);
+  text-decoration: none;
+}
+
+.LargeLink:active {
+  background-color: var(--sky-blue-80);
+}
+
+@media (max-height: 550) {
+  .LargeLink {
+    width: 90vw;
+  }
+}

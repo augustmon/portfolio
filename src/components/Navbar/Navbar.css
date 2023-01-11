@@ -1,22 +1,31 @@
 .Navbar {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--dark-100);
+  justify-content: flex-start;
+
+  background-color: var(--dark-80);
   width: 100vw;
   margin-top: 0;
   height: 40px;
-  padding: 12px;
+  padding: 10px 42px;
+  gap: 62px;
 }
 
 .Navbar > a {
+  font-family: "Work Sans";
+  font-weight: 500;
   font-size: 24px;
+  line-height: 32px;
+  color: var(--light);
+  text-decoration: none;
 }
+
+/* if this is selected:  */
+/* .nav-elements > a {
+} */
 
 .sticky {
   position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
-  /* width: 100vw; */
 }
