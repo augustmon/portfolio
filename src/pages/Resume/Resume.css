@@ -4,6 +4,7 @@
   max-width: 1400px;
   align-items: stretch;
   /* justify-content: space-between; */
+  gap: 24px;
 }
 
 .left-column {
@@ -22,12 +23,12 @@
 }
 
 .picture-bg {
-  background-color: var(--dull-grey-100);
-  fill-opacity: 0.3;
-  box-shadow: 10px 10px 10px var(--dull-grey-100);
-  width: 100%;
-  margin-left: 100px;
-  border-radius: 25px;
+  /* background-color: var(--dark-80); */
+  /* fill-opacity: 0.3; */
+  /* width: 100%; */
+  /* margin-left: 100px; */
+  /* box-shadow: 4px 5px 0 var(--dark-100); */
+  /* border-radius: 25px; */
 }
 
 @media (max-width: 1200px) {

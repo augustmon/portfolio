@@ -1,18 +1,10 @@
 .Picture {
-  margin-left: auto;
-  /* background-color: blue; */
-  border-style: dashed;
+  /* margin-right: 0; */
   width: 180px;
-  border-radius: 25px;
-  border-color: var(--dull-grey-80);
-}
-
-.Picture > img {
-  border-radius: inherit;
-  box-shadow: -1px 4px 10px var(--dull-grey-100);
-  object-fit: cover;
-  width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 4px 5px 0 var(--dark-100);
 }
 
 .Resume > .Picture {
@@ -33,6 +25,10 @@
   .Resume > .Picture {
     visibility: visible;
     margin: 10px;
+    height: auto;
+    /* border-style: dashed; */
+    border-color: var(--dull-grey-80);
+    box-shadow: -1px 4px 10px var(--dull-grey-100);
   }
 }
 
