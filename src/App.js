@@ -20,6 +20,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
+      {/* <div id="background" /> */}
     </div>
   );
 }

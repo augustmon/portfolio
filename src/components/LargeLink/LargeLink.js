@@ -5,7 +5,8 @@ import "./LargeLink.css";
 export default function LargeLink(props) {
   return (
     <Link className="LargeLink" to={props.to}>
-      <h3>{props.children}</h3>
+      <h1 className="LargeLink--text">{props.children}</h1>
+      <div className="LargeLink--bg"></div>
     </Link>
   );
 }

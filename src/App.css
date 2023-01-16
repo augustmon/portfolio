@@ -1,6 +1,6 @@
 .App > main {
   /* padding-top: 5vh; */
-  margin-top: 48px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,15 +15,21 @@
 body {
   font-family: "Inter";
   background-color: var(--light);
-  background-color: var(--dark-100);
+  /* background-color: var(--dark-100); */
 
-  /* width: 100vw;
-  height: 100vh; */
   margin: 0;
+}
 
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+#background {
+  background-image: url("./images/gradient_light.svg");
+  background-color: var(--light);
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -99; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 
 p {
@@ -37,7 +43,6 @@ a {
   font-weight: 400;
   font-size: 13px;
   line-height: 200%;
-  /* or 26px */
   letter-spacing: -0.02em;
   color: #95b1d4;
 }
@@ -78,10 +83,12 @@ ul {
 }
 
 h1 {
-  font-family: "Work Sans";
+  font-family: "Permanent Marker";
+
   font-style: normal;
   font-weight: 700;
-  font-size: 3.5em;
+  font-size: 3em;
+  letter-spacing: 0.03em;
   margin-bottom: 0;
 }
 

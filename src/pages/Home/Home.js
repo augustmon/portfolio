@@ -5,8 +5,14 @@ import "./Home.css";
 export default function Home() {
   return (
     <div className="Home">
-      <LargeLink to="/resume"> RESUME </LargeLink>
-      <LargeLink to="/portfolio"> PORTFOLIO </LargeLink>
+      <div className="Home--column">
+        <LargeLink to="/resume"> RESUME </LargeLink>
+        <LargeLink to="/portfolio"> PORTFOLIO </LargeLink>
+      </div>
+      <div className="Home--text">
+        <p>This website is a learning project.</p>
+        <p>Made with React and NodeJS.</p>
+      </div>
     </div>
   );
 }

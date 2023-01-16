@@ -3,30 +3,47 @@
   justify-content: center;
   align-items: center;
 
-  width: 248px;
-  height: 248px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  background-color: var(--light);
-  padding: 48px;
+
   box-shadow: 5px 4px 0px var(--sky-blue-100);
   color: var(--dark-80);
+  text-decoration: none;
+}
+
+.LargeLink--bg {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  object-fit: fill;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(320deg, var(--dull-grey-100), transparent),
+    url("./../../images/gradient_noisy.svg");
+  filter: contrast(155%) brightness(120%);
+  aspect-ratio: inherit;
 }
 
 .LargeLink:hover {
   color: var(--light);
-  background-color: var(--baby-blue-80);
-  box-shadow: 5px 4px 0px var(--baby-blue-100);
-  text-decoration: none;
+  background: var(--dusty-blue-80);
+  background-image: url("./../../images/gradient_dusty-blue.svg");
+  box-shadow: 5px 4px 0px var(--dull-grey-100);
 }
 
 .LargeLink:active {
-  background-color: var(--sky-blue-80);
+  background: var(--dusty-blue-80);
 }
 
-@media (max-height: 700px) {
+.LargeLink--text {
+  margin: 0;
+}
+
+@media (max-height: 840px) {
   .LargeLink {
-    width: inherit;
-    height: inherit;
-    aspect-ratio: 1/1;
+    /* width: auto; */
+    height: auto;
+    aspect-ratio: 2/1;
   }
 }
