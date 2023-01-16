@@ -1,8 +1,15 @@
 .App > main {
-  margin-top: 60px;
+  /* padding-top: 5vh; */
+  margin-top: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .App > main {
+    padding-top: 0;
+  }
 }
 
 body {
@@ -40,24 +47,34 @@ ul {
 }
 
 :root {
+  /* DARK/LIGHT: BG and TEXT */
+  --dark-100: #1e1e1e;
+  --dark-80: #343434;
+  --dark-100-50: #1e1e1e7f;
+
+  --light: #f5f5f5;
+
+  /* LINKS */
+  --dusty-blue-100: #6f96c5;
+  --dusty-blue-80: #95b1d4;
+
+  /* MAIN BLUES */
   --baby-blue-100: #5d9fef;
   --baby-blue-80: #78aef1;
 
   --sky-blue-100: #0985f1;
   --sky-blue-80: #439fef;
 
-  --dull-grey-100: #a4a4a4;
-  --dull-grey-80: #cccccc;
-
-  --dark-100: #1e1e1e;
-  --dark-80: #343434;
-
+  /* MAIN PURPLES */
   --purple-100: #b580c7;
   --purple-80: #c49ad2;
 
-  --light: #f5f5f5;
+  /* GREYS */
+  --dull-grey-100: #a4a4a4;
+  --dull-grey-80: #cccccc;
 
-  /* --dusty-blue: ; */
+  /* BOX-SHADOWS  */
+  --hard-shadow: 0.5px 1px 0px rgba(0, 0, 0, 0.9);
 }
 
 h1 {

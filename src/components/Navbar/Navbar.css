@@ -8,6 +8,20 @@
   height: 40px;
   padding: 10px 42px;
   gap: 62px;
+  z-index: 2;
+}
+
+@media (max-width: 700px) {
+  .Navbar {
+    gap: 10%;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 .Navbar > a {
@@ -22,10 +36,3 @@
 /* if this is selected:  */
 /* .nav-elements > a {
 } */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}

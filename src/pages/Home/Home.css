@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 15vw;
-  margin-top: 33vh;
+  margin-top: 30vh;
 }
 
 @media (max-width: 840px) {
@@ -16,3 +16,9 @@
     gap: 8vh;
   }
 }
+
+/* @media (max-height: 700px) {
+  .Home {
+    height: 90vh;
+  }
+} */

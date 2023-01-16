@@ -1,20 +1,44 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import FloatingBox from "../../components/FloatingBox/FloatingBox";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import "./Portfolio.css";
 
 export default function Portfolio() {
   return (
     <div className="Portfolio">
-      <h2 style={{ color: "var(--light)" }}> SOUND DESIGN </h2>
-      <div className="portfolio-sounddesign card-bg">
-        <VideoPlayer url="https://www.youtube.com/embed/_f_r87OKduU" />
-        <VideoPlayer url="https://youtu.be/ZUqfVkjf3Sg" />
-        <VideoPlayer url="[https://youtu.be/SVsQIQCR5vI](https://youtu.be/SVsQIQCR5vI)" />
+      <div className="ux-portfolio Portfolio--category-layout center-aligned">
+        <h3 className="Portfolio--heading" style={{ color: "var(--light)" }}>
+          Development and UX
+        </h3>
+        <div className="Portfolio--float-layout">
+          <FloatingBox
+            title="Chat application"
+            imgFile="tripster-logo.png"
+            imgSize={100}
+          />
+          <FloatingBox
+            title="Interaction Design Sprints"
+            imgFile="sprints-logo.png"
+            url="https://youtu.be/ZUqfVkjf3Sg"
+            imgSize={100}
+          />
+          <FloatingBox
+            title="MQTT Experiments"
+            imgFile="mqtt-logo.png"
+            url="[https://youtu.be/SVsQIQCR5vI](https://youtu.be/SVsQIQCR5vI)"
+            imgSize={120}
+          />
+        </div>
       </div>
-      <h2 style={{ color: "var(--light)" }}> WEB DEVELOPMENT </h2>
-      <div className="flex-container card-bg">
-        <img src="" alt="" />
+      <div className="sound-portfolio Portfolio--category-layout center-aligned">
+        <h3 className="Portfolio--heading" style={{ color: "var(--light)" }}>
+          Sound and Music
+        </h3>
+        <div className="Portfolio--float-layout">
+          <FloatingBox title="Sound design" imgFile="pines_logo.png" />
+          <FloatingBox title="Advert composition" imgFile="zipp-logo.png" />
+        </div>
       </div>
     </div>
   );

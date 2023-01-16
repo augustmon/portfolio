@@ -23,8 +23,10 @@
   background-color: var(--sky-blue-80);
 }
 
-@media (max-height: 550) {
+@media (max-height: 700px) {
   .LargeLink {
-    width: 90vw;
+    width: inherit;
+    height: inherit;
+    aspect-ratio: 1/1;
   }
 }
