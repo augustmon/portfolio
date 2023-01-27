@@ -14,9 +14,9 @@ import softSkills from "./../../JSON/soft-skills.json";
 
 export default function Resume() {
   return (
-    <div className="Resume flex-container">
+    <div className="Resume flex-container card-bg">
+      <Picture id="left" />
       <div className="left-column">
-        <Picture id="left" />
         <ExperienceList
           heading="Work Experience"
           headingColor="var(--sky-blue-80)"
@@ -33,9 +33,11 @@ export default function Resume() {
       </div>
 
       <div className="right-column">
-        <Picture id="right" />
-
+        <div className="picture-bg">
+          <Picture id="right" />
+        </div>
         <SkillList
+          columns={2}
           text='"Soft" Skills'
           skills={softSkills}
           color="var(--purple-100)"

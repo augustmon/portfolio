@@ -1,10 +1,16 @@
 .SkillList {
-  min-width: auto;
-  max-width: 400px;
+  /* min-width: auto; */
+  width: 100%;
   margin-top: 12px;
 }
 
-.skill-bullets {
+.skill-ul {
   color: var(--light);
   padding: 6px 24px;
+}
+
+@media (min-width: 400px) {
+  .skill-ul {
+    min-width: 300px;
+  }
 }

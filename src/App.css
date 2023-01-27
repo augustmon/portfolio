@@ -1,14 +1,35 @@
+.App > main {
+  /* padding-top: 5vh; */
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .App > main {
+    padding-top: 0;
+  }
+}
+
 body {
   font-family: "Inter";
   background-color: var(--light);
-  background-color: var(--dark-80);
-  /* background-color: var(--dark-80); */
+  /* background-color: var(--dark-100); */
 
-  display: flex;
-  justify-content: center;
+  margin: 0;
+}
 
-  /* width: 100%;
-  height: 100%; */
+#background {
+  background-image: url("./images/gradient_light.svg");
+  background-color: var(--light);
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -99; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 
 p {
@@ -22,7 +43,6 @@ a {
   font-weight: 400;
   font-size: 13px;
   line-height: 200%;
-  /* or 26px */
   letter-spacing: -0.02em;
   color: #95b1d4;
 }
@@ -32,28 +52,43 @@ ul {
 }
 
 :root {
+  /* DARK/LIGHT: BG and TEXT */
+  --dark-100: #1e1e1e;
+  --dark-80: #343434;
+  --dark-100-50: #1e1e1e7f;
+
+  --light: #f5f5f5;
+
+  /* LINKS */
+  --dusty-blue-100: #6f96c5;
+  --dusty-blue-80: #95b1d4;
+
+  /* MAIN BLUES */
   --baby-blue-100: #5d9fef;
   --baby-blue-80: #78aef1;
 
   --sky-blue-100: #0985f1;
   --sky-blue-80: #439fef;
 
-  --dull-grey-100: #a4a4a4;
-  --dull-grey-80: #cccccc;
-
-  --dark-100: #1e1e1e;
-  --dark-80: #343434;
-
+  /* MAIN PURPLES */
   --purple-100: #b580c7;
   --purple-80: #c49ad2;
 
-  --light: #f5f5f5;
+  /* GREYS */
+  --dull-grey-100: #a4a4a4;
+  --dull-grey-80: #cccccc;
+
+  /* BOX-SHADOWS  */
+  --hard-shadow: 0.5px 1px 0px rgba(0, 0, 0, 0.9);
 }
 
 h1 {
+  font-family: "Permanent Marker";
+
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 3em;
+  letter-spacing: 0.03em;
   margin-bottom: 0;
 }
 
@@ -65,6 +100,17 @@ h2 {
   /* letter-spacing: -0.02em; */
   margin-bottom: 12px;
   margin-top: 0;
+}
+
+@media (max-width: 550px) {
+  h2 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+  }
 }
 
 h3 {
@@ -81,9 +127,26 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
 }
-@media (max-width: 1100px) {
+
+@media (max-width: 1200px) {
   .flex-container {
+    margin: 24px 6px;
     flex-direction: column;
+    justify-content: right;
+  }
+}
+
+.card-bg {
+  background-color: var(--light);
+  border-radius: 25px;
+  padding: 24px 32px;
+  margin: 24px 24px;
+}
+
+@media (max-width: 550px) {
+  .card-bg {
+    border-radius: 0;
+    margin: 0;
   }
 }
 

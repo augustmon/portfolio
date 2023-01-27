@@ -1,0 +1,57 @@
+.Navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 5px 0 10px var(--dark-100);
+
+  background-color: var(--dark-80);
+  width: 100vw;
+  margin-top: 0;
+  height: 32px;
+  padding: 10px 42px;
+  gap: 62px;
+  z-index: 2;
+}
+
+@media (max-width: 700px) {
+  .Navbar {
+    gap: 10%;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.Navbar--text-link {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--light);
+  text-decoration: none;
+}
+
+.Navbar > a:hover {
+  color: var(--dusty-blue-80);
+}
+
+.Navbar--home-link {
+  height: 38px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  border-radius: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.Navbar--home-link:hover {
+  background-color: var(--dusty-blue-80);
+  border-radius: 25%;
+}
+
+/* if this is selected:  */
+/* .nav-elements > a {
+} */

@@ -1,0 +1,49 @@
+.LargeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+  box-shadow: 5px 4px 0px var(--sky-blue-100);
+  color: var(--dark-80);
+  text-decoration: none;
+}
+
+.LargeLink--bg {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  object-fit: fill;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(320deg, var(--dull-grey-100), transparent),
+    url("./../../images/gradient_noisy.svg");
+  filter: contrast(155%) brightness(120%);
+  aspect-ratio: inherit;
+}
+
+.LargeLink:hover {
+  color: var(--light);
+  background: var(--dusty-blue-80);
+  background-image: url("./../../images/gradient_dusty-blue.svg");
+  box-shadow: 5px 4px 0px var(--dull-grey-100);
+}
+
+.LargeLink:active {
+  background: var(--dusty-blue-80);
+}
+
+.LargeLink--text {
+  margin: 0;
+}
+
+@media (max-height: 840px) {
+  .LargeLink {
+    /* width: auto; */
+    height: auto;
+    aspect-ratio: 2/1;
+  }
+}
