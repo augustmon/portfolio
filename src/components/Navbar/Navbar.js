@@ -1,22 +1,26 @@
 import React from "react";
-// import "./../../App.css";
 import "./Navbar.css";
-import { Link, Router } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import homeLogo from "./../../icons/ic_round-house.svg";
 
 export default function Navbar() {
-  const menuItems = ["portfolio", "resume"];
+  const menuItems = ["resume", "portfolio"];
   const itemsToDisplay = menuItems.map((item) => (
-    <Link className="Navbar--text-link" key={item} to={`/${item}`}>
+    <NavLink
+      className="Navbar--text-link"
+      activeClassName="active"
+      key={item}
+      to={`/${item}`}
+    >
       {item}
-    </Link>
+    </NavLink>
   ));
 
   return (
     <nav className="Navbar sticky">
-      <Link className="Navbar--home-link" to="/">
+      <NavLink className="Navbar--home-link" activeClassName="active" to="/">
         <img src={homeLogo} alt="Home icon" />
-      </Link>
+      </NavLink>
 
       {itemsToDisplay}
     </nav>
