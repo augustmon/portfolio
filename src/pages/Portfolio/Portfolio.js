@@ -8,21 +8,24 @@ export default function Portfolio() {
   return (
     <div className="Portfolio">
       <div className="ux-portfolio Portfolio--category-layout center-aligned">
-        <h3 className="Portfolio--heading">Development and UX</h3>
+        <h2 className="Portfolio--heading">Development and UX</h2>
         <div className="Portfolio--float-layout">
           <FloatingBox
             title="Chat application"
+            projectPageName="chat-app"
             imgFile="tripster-logo.png"
             imgSize={85}
           />
           <FloatingBox
             title="Interaction Design Sprints"
+            projectPageName="sprints"
             imgFile="sprints-logo.png"
             url="https://youtu.be/ZUqfVkjf3Sg"
             imgSize={100}
           />
           <FloatingBox
             title="MQTT Experiments"
+            projectPageName="experiments"
             imgFile="mqtt-logo.png"
             url="[https://youtu.be/SVsQIQCR5vI](https://youtu.be/SVsQIQCR5vI)"
             imgSize={120}
@@ -30,10 +33,18 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="sound-portfolio Portfolio--category-layout center-aligned">
-        <h3 className="Portfolio--heading">Sound and Music</h3>
+        <h2 className="Portfolio--heading">Sound and Music</h2>
         <div className="Portfolio--float-layout">
-          <FloatingBox title="Sound design" imgFile="pines_logo.png" />
-          <FloatingBox title="Advert composition" imgFile="zipp-logo.png" />
+          <FloatingBox
+            title="Sound design"
+            projectPageName="sound"
+            imgFile="pines_logo.png"
+          />
+          <FloatingBox
+            title="Advert composition"
+            projectPageName="composition"
+            imgFile="zipp-logo.png"
+          />
         </div>
       </div>
     </div>

@@ -9,10 +9,10 @@ export default function Home() {
         <LargeLink to="/resume"> RESUME </LargeLink>
         <LargeLink to="/portfolio"> PORTFOLIO </LargeLink>
       </div>
-      <div className="Home--text">
+      <footer className="Home--text">
         <p>This website is a learning project.</p>
         <p>Made with React and NodeJS.</p>
-      </div>
+      </footer>
     </div>
   );
 }

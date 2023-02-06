@@ -1,0 +1,44 @@
+.ProjectPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-100);
+}
+
+.ProjectPage--backlink {
+  position: absolute;
+  left: 10px;
+  font-size: 42px;
+  text-decoration: none;
+}
+
+.ProjectPage--backlink:hover {
+  background-color: var(--dusty-blue-80);
+}
+
+.imgLeft {
+  max-width: 20vw;
+}
+
+.imgRight {
+  max-width: 20vw;
+}
+
+.ProjectPage--flex {
+  display: flex;
+  margin-top: 10vh;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .imgLeft {
+    visibility: hidden;
+  }
+  .imgRight {
+    visibility: hidden;
+  }
+}

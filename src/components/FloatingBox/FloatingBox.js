@@ -6,7 +6,7 @@ export default function FloatingBox(props) {
   const logoImage = require(`./../../images/${props.imgFile}`);
 
   return (
-    <Link className="FloatingBox" to="">
+    <Link className="FloatingBox" to={props.projectPageName}>
       <div className="FloatingBox--content"></div>
       <img
         className="FloatingBox--image"
