@@ -1,6 +1,7 @@
 import React from "react";
 import LargeLink from "../../components/LargeLink/LargeLink";
 import "./Home.css";
+import Footer from "./../../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -9,10 +10,12 @@ export default function Home() {
         <LargeLink to="/resume"> RESUME </LargeLink>
         <LargeLink to="/portfolio"> PORTFOLIO </LargeLink>
       </div>
-      <footer className="Home--text">
-        <p>This website is a learning project.</p>
-        <p>Made with React and NodeJS.</p>
-      </footer>
+      <Footer
+        textLines={[
+          "This website is a learning project.",
+          "Made with React and NodeJS.",
+        ]}
+      />
     </div>
   );
 }

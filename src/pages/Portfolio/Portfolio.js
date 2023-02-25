@@ -1,14 +1,13 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import FloatingBox from "../../components/FloatingBox/FloatingBox";
-import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+import Footer from "./../../components/Footer/Footer";
 import "./Portfolio.css";
 
 export default function Portfolio() {
   return (
     <div className="Portfolio">
       <div className="ux-portfolio Portfolio--category-layout center-aligned">
-        <h2 className="Portfolio--heading">Development and UX</h2>
+        <h2 className="Portfolio--heading">Web dev & UX</h2>
         <div className="Portfolio--float-layout">
           <FloatingBox
             title="Chat application"
@@ -33,7 +32,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="sound-portfolio Portfolio--category-layout center-aligned">
-        <h2 className="Portfolio--heading">Sound and Music</h2>
+        <h2 className="Portfolio--heading">Sound & Music</h2>
         <div className="Portfolio--float-layout">
           <FloatingBox
             title="Sound design"
@@ -47,6 +46,7 @@ export default function Portfolio() {
           />
         </div>
       </div>
+      <Footer textLines={["This section is under construction!"]} />
     </div>
   );
 }

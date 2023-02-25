@@ -1,8 +1,5 @@
 .TextBox {
-  /* width: 40vw; */
-  width: auto;
-  max-width: 1100px;
-  /* background-color: var(--dark-80); */
+  max-width: 840px;
   text-align: justify;
 }
 
@@ -11,6 +8,11 @@
 }
 
 .TextBox--link {
+  float: inline-start;
+  font-size: larger;
   background-color: var(--baby-blue-100);
+  padding: 12px;
+  margin-top: 46px;
+  border-radius: 25px;
   color: var(--light);
 }

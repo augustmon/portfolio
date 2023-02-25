@@ -1,6 +1,6 @@
 {
   "title": "React Chat Application",
-  "description": "We made this in React as part of a school course in UX and web implementation using modern frameworks.",
+  "description": "This project was created in React as part of a university course in UX and web implementation using modern frameworks. The goal was to create an MVP of a chat application, which was intended for a specific use scenario, in this case guests visiting a hostel. ",
   "linkTitle": "GitHub Repository",
-  "linkTo": "github.com"
+  "href": "https://www.github.com"
 }
