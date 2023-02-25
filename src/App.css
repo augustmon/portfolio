@@ -1,23 +1,16 @@
-.App > main {
-  /* padding-top: 5vh; */
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 1200px) {
-  .App > main {
-    padding-top: 0;
-  }
-}
-
 body {
   font-family: "Inter";
   background-color: var(--light);
-  /* background-color: var(--dark-100); */
-
+  background-color: var(--dark-100);
   margin: 0;
+}
+
+main {
+  padding-top: 0;
+  margin-top: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #background {
@@ -29,7 +22,7 @@ body {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: -99; /* Ensure div tag stays behind content; -999 might work, too. */
+  z-index: -99;
 }
 
 p {
@@ -37,6 +30,7 @@ p {
   color: var(--dark-100);
 }
 
+/* basic links */
 a {
   font-family: "Work Sans";
   font-style: normal;
@@ -96,21 +90,21 @@ h2 {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2.5em;
   /* letter-spacing: -0.02em; */
   margin-bottom: 12px;
   margin-top: 0;
 }
 
 @media (max-width: 550px) {
-  h2 {
+  /* h2 {
     font-family: "Work Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 2em;
     letter-spacing: -0.02em;
     margin-bottom: 2px;
-  }
+  } */
 }
 
 h3 {

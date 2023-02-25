@@ -1,0 +1,29 @@
+@media (max-width: 800px) {
+  .Footer {
+    visibility: hidden;
+  }
+}
+
+@media (max-height: 745px) {
+  .Footer {
+    visibility: hidden;
+  }
+}
+@media (max-height: 800px) {
+  .Footer {
+    top: 745px;
+  }
+}
+
+.Footer {
+  background-color: var(--sky-blue-80);
+  font-style: italic;
+  padding: 16px 0;
+  width: 100%;
+
+  justify-self: flex-end;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  /* z-index: -2; */
+}
