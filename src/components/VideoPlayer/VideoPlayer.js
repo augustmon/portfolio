@@ -12,7 +12,6 @@ export default function VideoPlayer(props) {
         pip
         width="100%"
         height="100%"
-        // light
       />
     </div>
   );

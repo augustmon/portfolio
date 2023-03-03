@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import ChatApp from "./pages/ChatApp/ChatApp";
+import SoundDesign from "./pages/SoundDesign/SoundDesign";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             />
             <Route
               path="/portfolio/sound"
-              element={<ProjectPage projectPageName="sound" />}
+              element={<SoundDesign projectPageName="sound" />}
             />
             <Route
               path="/portfolio/composition"

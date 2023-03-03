@@ -15,7 +15,7 @@ export default function Portfolio() {
             imgFile="tripster-logo.png"
             imgSize={85}
           />
-          <FloatingBox
+          {/* <FloatingBox
             title="Interaction Design Sprints"
             projectPageName="sprints"
             imgFile="sprints-logo.png"
@@ -26,7 +26,7 @@ export default function Portfolio() {
             projectPageName="experiments"
             imgFile="mqtt-logo.png"
             imgSize={120}
-          />
+          /> */}
         </div>
       </div>
       <div className="sound-portfolio Portfolio--category-layout center-aligned">
@@ -37,11 +37,11 @@ export default function Portfolio() {
             projectPageName="sound"
             imgFile="pines_logo.png"
           />
-          <FloatingBox
+          {/* <FloatingBox
             title="Advert composition"
             projectPageName="composition"
             imgFile="zipp-logo.png"
-          />
+          /> */}
         </div>
       </div>
       <Footer textLines={["This section is under construction!"]} />

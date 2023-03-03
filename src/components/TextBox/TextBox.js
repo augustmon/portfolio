@@ -6,9 +6,13 @@ export default function TextBox(props) {
     <div className="TextBox card-bg">
       <h2 className="TextBox--title"> {props.title}</h2>
       <p className="TextBox--description"> {props.description}</p>
-      <a className="TextBox--link" href={props.href} target="_blank">
-        {props.linkTitle}
-      </a>
+      {props.children}
+
+      {props.href !== undefined && (
+        <a className="TextBox--link" href={props.href} target="_blank">
+          {props.linkTitle}
+        </a>
+      )}
     </div>
   );
 }

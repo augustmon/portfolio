@@ -5,31 +5,43 @@
 }
 
 .ProjectPage--backlink {
+  color: var(--light);
   position: absolute;
-  left: 10px;
+  left: 14px;
   font-size: 42px;
   text-decoration: none;
 }
 
 .ProjectPage--backlink:hover {
-  background-color: var(--dusty-blue-80);
+  background-color: var(--dusty-blue-100);
 }
 
 .TextBox {
   order: 1;
-  /* flex-grow: 2; */
-  /* width: 400px; */
   min-width: 320px;
+  filter: drop-shadow(5px 10px 10px black);
+}
+
+.VideoPlayer {
+  margin-top: 12px;
+}
+
+.projectImg {
+  filter: drop-shadow(1px 5px 10px var(--dark-80));
 }
 
 .imgLeft {
   order: 0;
   max-width: 200px;
+  align-self: flex-end;
+  margin-bottom: 24px;
 }
 
 .imgRight {
   max-width: 200px;
   order: 2;
+  align-self: flex-start;
+  margin-top: 24px;
 }
 
 .ProjectPage--flex {
@@ -43,10 +55,15 @@
 
 @media (max-width: 1000px) {
   .TextBox {
-    order: -1;
+    order: -99;
   }
 
   .ProjectPage--flex {
     flex-wrap: wrap;
+  }
+
+  .projectImg {
+    align-self: auto;
+    margin-top: 5vh;
   }
 }
