@@ -17,8 +17,8 @@ export default function FloatingBox(props) {
       <div className="FloatingBox--title">
         <h4 className="bold-main"> {props.title}</h4>
       </div>
-      <div className="FloatingBox--bg" />
-      <div className="overlay" />
+      {/* <div className="FloatingBox--bg" /> */}
+      {/* <div className="overlay" /> */}
     </Link>
   );
 }

@@ -19,14 +19,12 @@ export default function Portfolio() {
             title="Interaction Design Sprints"
             projectPageName="sprints"
             imgFile="sprints-logo.png"
-            url="https://youtu.be/ZUqfVkjf3Sg"
             imgSize={100}
           />
           <FloatingBox
             title="MQTT Experiments"
             projectPageName="experiments"
             imgFile="mqtt-logo.png"
-            url="[https://youtu.be/SVsQIQCR5vI](https://youtu.be/SVsQIQCR5vI)"
             imgSize={120}
           />
         </div>

@@ -7,8 +7,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import TextBox from "../../components/TextBox/TextBox";
 
 export default function ProjectPage(props) {
-  //  if empty -> show this:
-  // UNDER CONSTRUCTION
   const placeholder = (
     <TextBox
       title="UNDER CONSTRUCTION"
@@ -18,11 +16,7 @@ export default function ProjectPage(props) {
 
   return (
     <div className="ProjectPage">
-      <NavLink
-        className="ProjectPage--backlink"
-        to="/portfolio"
-        // style={{ color: "black" }}
-      >
+      <NavLink className="ProjectPage--backlink" to="/portfolio">
         <ArrowBackIcon fontSize="larger" />
       </NavLink>
       {props.title != undefined && (
