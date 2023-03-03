@@ -1,14 +1,10 @@
 .VideoPlayer {
-  /* padding-top: 56.25%; */
   position: relative;
-  max-width: 40vw;
-  /* width: 20vw; */
-  /* height: 0px; */
-  /* max-height: 10vh; */
+  padding-top: 56.25%;
 }
 
 .react-player {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 0; */
+  left: 0;
 }

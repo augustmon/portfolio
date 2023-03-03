@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./ProjectPage.css";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ReactPlayer from "react-player";
+import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
 //Components
 import TextBox from "../../components/TextBox/TextBox";
@@ -26,9 +28,17 @@ export default function ProjectPage(props) {
             description={props.description}
             linkTitle={props.linkTitle}
             href={props.href}
-          />
-          <img src={props.imgLeft} className="imgLeft" />
-          <img src={props.imgRight} className="imgRight" />
+          >
+            {props.videoLink !== undefined && (
+              <VideoPlayer
+                className="ProjectPage--video"
+                url={props.videoLink}
+              />
+            )}
+          </TextBox>
+
+          <img src={props.imgLeft} className="imgLeft projectImg" />
+          <img src={props.imgRight} className="imgRight projectImg" />
         </div>
       )}
 
