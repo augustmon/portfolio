@@ -1,18 +1,8 @@
 .ProjectPage {
   display: flex;
   justify-content: center;
+  max-width: 1100px;
 }
-
-/* .ProjectPage--bg {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -99;
-  width: 100%;
-  min-height: 100vh;
-  margin-bottom: 0;
-  background-color: var(--dark-100);
-} */
 
 .ProjectPage--backlink {
   position: absolute;
@@ -27,16 +17,17 @@
 
 .TextBox {
   order: 1;
-  flex-grow: 1.5;
+  flex-grow: 2;
+  max-width: 550px;
 }
 
 .imgLeft {
-  max-width: 20vw;
   order: 0;
+  max-width: 200px;
 }
 
 .imgRight {
-  max-width: 20vw;
+  max-width: 200px;
   order: 2;
 }
 
@@ -55,14 +46,6 @@
   }
 
   .ProjectPage--flex {
-    /* flex-direction: column; */
     flex-wrap: wrap;
   }
-
-  /* .imgLeft {
-    visibility: hidden;
-  }
-  .imgRight {
-    visibility: hidden;
-  } */
 }
