@@ -17,8 +17,9 @@
 
 .TextBox {
   order: 1;
-  flex-grow: 2;
-  max-width: 550px;
+  /* flex-grow: 2; */
+  /* width: 400px; */
+  min-width: 320px;
 }
 
 .imgLeft {
@@ -40,7 +41,7 @@
   align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .TextBox {
     order: -1;
   }
