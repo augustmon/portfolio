@@ -1,8 +1,8 @@
 .FloatingBox {
-  width: 230px;
-  height: 230px;
+  min-width: 190px;
+  max-width: 560px;
+  height: 190px;
   background-color: var(--dark-80);
-
   filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.9));
   border-radius: 25px;
   overflow: hidden;
@@ -32,47 +32,43 @@
 } */
 
 .FloatingBox--logo {
-  max-height: 100%;
-  padding: 24px;
+  max-height: 75%;
+  padding: 25%;
 }
 
 .FloatingBox--image {
   max-height: 100%;
   object-fit: contain;
-  /* margin-top: 15%; */
 }
 
-.FloatingBox--content {
+.FloatingBox--highlight {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: var(--dusty-blue-100);
   opacity: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
-.FloatingBox :hover {
+.FloatingBox:hover .FloatingBox--highlight {
   opacity: 0.5;
 }
 
+.FloatingBox:hover .FloatingBox--title {
+  background-color: var(--baby-blue-100);
+}
+
 .FloatingBox--title {
-  display: flex;
-  align-items: center;
-  justify-content: left;
   position: absolute;
-  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  font-size: large;
   text-shadow: 0.5px 1px 0px rgba(0, 0, 0, 0.9);
   padding-left: 12px;
   color: var(--light);
   width: 100%;
-  left: 0;
-  bottom: 0;
-  margin: 0;
   height: 35px;
+  z-index: 1;
   background-color: var(--dark-100-50);
-}
-
-.FloatingBox--title > .bold-main {
-  margin-bottom: 0;
-  font-size: large;
 }

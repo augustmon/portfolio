@@ -7,16 +7,14 @@ export default function FloatingBox(props) {
 
   return (
     <Link className="FloatingBox" to={props.projectPageName}>
-      <div className="FloatingBox--content"></div>
+      <h4 className="FloatingBox--title bold-main"> {props.title}</h4>
+      <div className="FloatingBox--highlight"></div>
       <img
         className="FloatingBox--image"
         src={logoImage}
         style={{ maxHeight: props.imgSize }}
       />
 
-      <div className="FloatingBox--title">
-        <h4 className="bold-main"> {props.title}</h4>
-      </div>
       {/* <div className="FloatingBox--bg" /> */}
       {/* <div className="overlay" /> */}
     </Link>

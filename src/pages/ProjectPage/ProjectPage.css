@@ -5,15 +5,26 @@
 }
 
 .ProjectPage--backlink {
+  border-radius: 50%;
   color: var(--light);
+  background-color: var(--baby-blue-100);
   position: absolute;
-  left: 14px;
-  font-size: 42px;
-  text-decoration: none;
+  left: 15px;
+  z-index: 1;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.ProjectPage--backlink svg {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
 }
 
 .ProjectPage--backlink:hover {
-  background-color: var(--dusty-blue-100);
+  color: var(--dusty-blue-80);
+  background-color: var(--dark-80);
 }
 
 .TextBox {
