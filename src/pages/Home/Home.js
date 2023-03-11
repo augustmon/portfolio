@@ -12,8 +12,7 @@ export default function Home() {
       </div>
       <Footer
         textLines={[
-          "This website is a learning project.",
-          "Made with React and NodeJS.",
+          "This website is a learning project. Made with React and NodeJS.",
         ]}
       />
     </div>
