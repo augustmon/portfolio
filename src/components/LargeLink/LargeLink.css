@@ -42,9 +42,10 @@
 }
 
 @media (max-height: 840px) {
-  .LargeLink {
-    /* width: auto; */
-    height: auto;
-    aspect-ratio: 2/1;
+  @media (max-width: 840px) {
+    .LargeLink {
+      height: auto;
+      aspect-ratio: 3/2;
+    }
   }
 }

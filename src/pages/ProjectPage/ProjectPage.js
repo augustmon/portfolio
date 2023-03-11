@@ -1,8 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./ProjectPage.css";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ReactPlayer from "react-player";
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
 //Components
@@ -18,9 +17,9 @@ export default function ProjectPage(props) {
 
   return (
     <div className="ProjectPage">
-      <NavLink className="ProjectPage--backlink" to="/portfolio">
-        <ArrowBackIcon fontSize="larger" />
-      </NavLink>
+      <Link className="ProjectPage--backlink link-button" to="/portfolio">
+        <ArrowBackRoundedIcon />
+      </Link>
       {props.title != undefined && (
         <div className="ProjectPage--flex">
           <TextBox

@@ -9,7 +9,11 @@ export default function TextBox(props) {
       {props.children}
 
       {props.href !== undefined && (
-        <a className="TextBox--link" href={props.href} target="_blank">
+        <a
+          className="TextBox--link link-button"
+          href={props.href}
+          target="_blank"
+        >
           {props.linkTitle}
         </a>
       )}

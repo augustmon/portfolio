@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import homeLogo from "./../../icons/ic_round-house.svg";
 
 export default function Navbar() {

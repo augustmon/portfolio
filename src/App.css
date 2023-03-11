@@ -1,6 +1,7 @@
 body {
   font-family: "Inter";
-  background-color: var(--light);
+  /* font-family: "Yomogi", cursive; */
+  /* background-color: var(--light); */
   background-color: var(--dark-100);
   margin: 0;
 }
@@ -50,7 +51,6 @@ ul {
   --dark-100: #1e1e1e;
   --dark-80: #343434;
   --dark-100-50: #1e1e1e7f;
-
   --light: #f5f5f5;
 
   /* LINKS */
@@ -78,7 +78,6 @@ ul {
 
 h1 {
   font-family: "Permanent Marker";
-
   font-style: normal;
   font-weight: 700;
   font-size: 3em;
@@ -87,28 +86,16 @@ h1 {
 }
 
 h2 {
-  font-family: "Work Sans";
+  font-family: "Yomogi", cursive;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5em;
-  /* letter-spacing: -0.02em; */
   margin-bottom: 12px;
   margin-top: 0;
 }
 
-@media (max-width: 550px) {
-  /* h2 {
-    font-family: "Work Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2em;
-    letter-spacing: -0.02em;
-    margin-bottom: 2px;
-  } */
-}
-
 h3 {
-  font-family: "Work Sans";
+  font-family: "Yomogi", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 2em;
@@ -160,16 +147,14 @@ h3 {
 
 .bold-main {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1em;
-  /* line-height: 15px; */
 }
 
 .cursive-main {
   font-style: italic;
   font-weight: 600;
   font-size: 1em;
-  /* line-height: 15px; */
   padding: 0 8px;
 }
 
@@ -178,4 +163,14 @@ h3 {
   font-weight: 400;
   font-size: 1em;
   line-height: 150%;
+}
+
+.link-button {
+  color: var(--light);
+  background-color: var(--baby-blue-100);
+}
+
+.link-button:hover {
+  color: var(--dusty-blue-80);
+  background-color: var(--dark-80);
 }
