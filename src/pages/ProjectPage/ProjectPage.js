@@ -17,7 +17,7 @@ export default function ProjectPage(props) {
 
   return (
     <div className="ProjectPage">
-      <Link className="ProjectPage--backlink" to="/portfolio">
+      <Link className="ProjectPage--backlink link-button" to="/portfolio">
         <ArrowBackRoundedIcon />
       </Link>
       {props.title != undefined && (

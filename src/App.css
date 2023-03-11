@@ -164,3 +164,13 @@ h3 {
   font-size: 1em;
   line-height: 150%;
 }
+
+.link-button {
+  color: var(--light);
+  background-color: var(--baby-blue-100);
+}
+
+.link-button:hover {
+  color: var(--dusty-blue-80);
+  background-color: var(--dark-80);
+}
