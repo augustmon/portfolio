@@ -1,10 +1,13 @@
 [
   {
     "id": 1,
-    "dates": "AUGUST 2021 - (JANUARY 2023)",
+    "dates": "AUGUST 2021 - (JANUARY 2024)",
     "company": "IT-University Cph",
-    "position": "MSc - Digital Design and Interactive Technologies",
-    "tasks": ["IT and Design education with focus on UX and Interaction Design"]
+    "position": "MSc - Digital Design",
+    "tasks": [
+      "IT and Design education with focus on UX and Interaction Design"
+    ],
+    "linkTo": "https://www.itu.dk/"
   },
 
   {
@@ -12,14 +15,16 @@
     "dates": "MAY 2021 - JUNE 2021",
     "company": "Talent Garden",
     "position": "Course - UX and Graphic Design",
-    "tasks": ["Six week course on web design in collaboration with companies"]
+    "tasks": ["Six week course on web design in collaboration with companies"],
+    "linkTo": "https://talentgarden.org/en/about/"
   },
 
   {
     "id": 3,
     "dates": "AUGUST 2017 - JANUARY 2021",
     "company": "Sonic College",
-    "position": "BA - Sound Design and Media Communication",
-    "tasks": ["Broad education in digital communication technologies"]
+    "position": "BA - Sound Design",
+    "tasks": ["Broad education in digital communication technologies"],
+    "linkTo": "https://soniccollege.org/"
   }
 ]

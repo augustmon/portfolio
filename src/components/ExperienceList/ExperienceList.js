@@ -13,6 +13,7 @@ export default function ExperienceList(props) {
       position={item.position}
       tasks={item.tasks}
       itemColor={props.itemColor}
+      linkTo={item.linkTo}
     />
   ));
 

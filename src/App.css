@@ -103,6 +103,15 @@ h3 {
   margin-bottom: 2px;
 }
 
+h4 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;

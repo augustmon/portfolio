@@ -4,7 +4,7 @@
   max-width: 1300px;
 }
 
-.ProjectPage--backlink {
+/* .ProjectPage--backlink {
   border-radius: 50%;
   color: var(--light);
   background-color: var(--baby-blue-100);
@@ -13,7 +13,7 @@
   z-index: 1;
   margin-top: 16px;
   padding: 0;
-}
+} */
 
 .link-button {
   color: var(--light);
@@ -23,9 +23,6 @@
 .link-button:hover {
   color: var(--dusty-blue-80);
   background-color: var(--dark-80);
-}
-
-.ProjectPage--backlink:hover {
 }
 
 .ProjectPage--backlink svg {
@@ -65,7 +62,7 @@
 
 .ProjectPage--flex {
   display: flex;
-  margin-top: max(10vh, 64px);
+  /* margin-top: max(10vh, 64px); */
   flex-direction: row;
   justify-content: space-evenly;
   gap: 24px;
@@ -84,5 +81,7 @@
   .projectImg {
     align-self: auto;
     margin-top: 5vh;
+    visibility: hidden;
+    position: absolute;
   }
 }

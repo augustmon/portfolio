@@ -4,7 +4,8 @@
 }
 
 .TextBox--title {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 18px;
 }
 
 .TextBox--link {

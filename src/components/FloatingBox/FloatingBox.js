@@ -13,6 +13,7 @@ export default function FloatingBox(props) {
         className="FloatingBox--image"
         src={logoImage}
         style={{ maxHeight: props.imgSize }}
+        alt="App logo in a rounded box"
       />
 
       {/* <div className="FloatingBox--bg" /> */}

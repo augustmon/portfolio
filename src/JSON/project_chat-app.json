@@ -1,6 +1,17 @@
 {
   "title": "React Chat Application",
-  "description": "This project was created in React as part of a university course in UX and web implementation using modern frameworks. The goal was to create an MVP of a chat application, which was intended for a specific use scenario, in this case, guests visiting a hostel. \n The database functionality was implemented with Back4App (a Backed as a Service using the Parse API) and version control/collaboration was done with GitHub. The project is deployed using Netlify.",
-  "linkTitle": "GitHub Repository",
-  "href": "https://www.github.com"
+  "description": [
+    "This project was created in React as part of a university course in UX and web implementation using modern frameworks. The goal was to create an MVP of a chat application, which was intended for a specific use scenario, in this case, guests visiting a hostel.",
+    "The database functionality was implemented with Back4App (a Backend as a Service using the Parse API) and version control/collaboration was done with GitHub. The project is deployed using Netlify."
+  ],
+  "links": [
+    {
+      "linkTitle": "GitHub Repository",
+      "href": "https://github.itu.dk/aufr/tripster"
+    },
+    {
+      "linkTitle": "Netlify Deploy",
+      "href": "https://tripster-showcase-beta.netlify.app/"
+    }
+  ]
 }
