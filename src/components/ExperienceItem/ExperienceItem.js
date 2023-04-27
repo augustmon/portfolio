@@ -1,6 +1,7 @@
 import React from "react";
 import "./../../App.css";
 import "./ExperienceItem.css";
+import { Link } from "@mui/material";
 
 export default function ExperienceItem(props) {
   // list out tasks
@@ -15,7 +16,7 @@ export default function ExperienceItem(props) {
       <p className="eyebrow"> {props.dates} </p>
       <p className="main-entry">
         <span className="bold-main" style={{ color: props.itemColor }}>
-          {props.company} -{" "}
+          <Link href={props.linkTo}> {props.company}</Link> -{" "}
         </span>
 
         <span

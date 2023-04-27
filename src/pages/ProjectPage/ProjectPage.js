@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./ProjectPage.css";
-import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
 //Components
@@ -17,16 +15,12 @@ export default function ProjectPage(props) {
 
   return (
     <div className="ProjectPage">
-      <Link className="ProjectPage--backlink link-button" to="/portfolio">
-        <ArrowBackRoundedIcon />
-      </Link>
-      {props.title != undefined && (
+      {props.title !== undefined && (
         <div className="ProjectPage--flex">
           <TextBox
             title={props.title}
             description={props.description}
-            linkTitle={props.linkTitle}
-            href={props.href}
+            links={props.links}
           >
             {props.videoLink !== undefined && (
               <VideoPlayer
@@ -36,12 +30,13 @@ export default function ProjectPage(props) {
             )}
           </TextBox>
 
+          {/* button make into buttons */}
           <img src={props.imgLeft} className="imgLeft projectImg" />
           <img src={props.imgRight} className="imgRight projectImg" />
         </div>
       )}
 
-      {props.title == undefined && placeholder}
+      {props.title === undefined && placeholder}
     </div>
   );
 }

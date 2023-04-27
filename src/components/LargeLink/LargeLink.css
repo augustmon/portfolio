@@ -23,6 +23,7 @@
   background: linear-gradient(320deg, var(--dull-grey-100), transparent),
     url("./../../images/gradient_noisy.svg");
   filter: contrast(155%) brightness(110%);
+  background-size: cover;
   aspect-ratio: inherit;
 }
 

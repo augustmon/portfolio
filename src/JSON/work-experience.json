@@ -1,10 +1,11 @@
 [
   {
     "id": 1,
-    "dates": "February 2021 - Present",
+    "dates": "February 2022 - Present",
     "company": "BizApps ApS",
-    "position": "UX designer and integrator",
-    "tasks": ["User research and app development"]
+    "position": "Technical UX designer",
+    "tasks": ["User research and app development"],
+    "linkTo": "https://bizapps.dk/"
   },
 
   {
@@ -15,16 +16,18 @@
     "tasks": [
       "Music and video editing for adverts and social media",
       "Briefing external composers and internal supervisors"
-    ]
+    ],
+    "linkTo": "https://sizzer.nl/"
   },
   {
     "id": 3,
     "dates": "OCTOBER 2017 - PRESENT",
     "company": "Freelance",
-    "position": "Sound designer for film, podcast and adverts",
+    "position": "Sound designer for film and podcast",
     "tasks": [
       "Music for exhibition 'To The Art Doctor' at Mauritshuis",
       "Sound design for award winning '100,000 Acres of Pine'"
-    ]
+    ],
+    "linkTo": "https://youtu.be/vuO2XVHluSw"
   }
 ]

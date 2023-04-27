@@ -6,7 +6,7 @@ export default function Picture() {
     <img
       className="Picture"
       src={require("../../images/august_square.png")}
-      alt="profile of author"
+      alt="Front face of author in black and white"
     />
   );
 }
